@@ -1,18 +1,16 @@
-const fs = require('fs/promises');
+const fs = require('fs');
 const path = require('path');
 
 module.exports = async function myPlugin(context, options) {
-  // ...
   return {
-    name: 'title',
-    // async loadContent() {
-    //   const filepath = path.join(__dirname, 'data.json');
-    //   return fs.readFile(filepath, 'utf8');
-    // },
+    name: 'docusaurus-friends-plugin',
     async contentLoaded({ content, actions }) {
       const { createData, addRoute } = actions;
       // Create friends.json
-      const friends = ['Yangshun', 'Sebastien'];
+      const friends = ['Alice', 'Bob', 'Joe'];
+      // const friends = fs.readFileSync(path.join(__dirname, 'data.json'), {
+      //   encoding: 'utf-8',
+      // });
       const friendsJsonPath = await createData(
         'friends.json',
         JSON.stringify(friends),
@@ -29,7 +27,5 @@ module.exports = async function myPlugin(context, options) {
         exact: true,
       });
     },
-
-    /* other lifecycle API */
   };
-};
+}
