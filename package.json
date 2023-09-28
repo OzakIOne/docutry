@@ -24,19 +24,8 @@
     "@argos-ci/cli": "^0.6.0",
     "@argos-ci/playwright": "^0.0.7",
     "@playwright/test": "^1.38.1",
-    "cheerio": "1.0.0-rc.12""@docusaurus/module-type-aliases": "2.4.3"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "cheerio": "1.0.0-rc.12",
+    "@docusaurus/module-type-aliases": "2.4.3"
   },
   "engines": {
     "node": ">=16.14"

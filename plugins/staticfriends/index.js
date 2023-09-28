@@ -1,6 +1,6 @@
 module.exports = function friendsPlugin(context, options) {
   return {
-    name: 'docusaurus-friends-plugin-global',
+    name: 'docusaurus-friends-plugin-global-static',
     async contentLoaded({ content, actions }) {
       const { setGlobalData, addRoute } = actions;
       // Create friends global data

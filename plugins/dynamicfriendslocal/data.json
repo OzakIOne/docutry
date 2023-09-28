@@ -1,9 +1,11 @@
-[
-  "Clement",
-  "Guillaume",
-  "Jean",
-  "Julien",
-  "Pierre",
-  "Romain",
-  "Thomas"
-]
+{
+  "friends": [
+    "Clement",
+    "Guillaume",
+    "Jean",
+    "Julien",
+    "Pierre",
+    "Romain",
+    "Thomas"
+  ]
+}
