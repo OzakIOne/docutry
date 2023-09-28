@@ -33,7 +33,10 @@ const config = {
   },
 
   plugins: [
-    './plugins/title'
+    './plugins/staticfriends',
+    './plugins/dynamicfriends',
+    './plugins/dynamicfriendslocal',
+
   ],
   presets: [
     [
